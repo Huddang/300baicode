@@ -1,28 +1,12 @@
-function bai18
-let month = prompt("Nhập một tháng (tây)");
-let season;
-switch (Number(month)) {
-  case 2:
-  case 3:
-  case 4:
-    season = "Xuân";
-    break;
-  case 5:
-  case 6:
-  case 7:
-    season = "Hạ";
-    break;
-  case 8:
-  case 9:
-  case 10:
-    season = "Thu";
-    break;
-  case 11:
-  case 12:
-  case 1:
-    season = "Ðông";
-    break;
-  default:
-    season = "Tháng không hợp lệ";
+function bai17(T){
+  if (T === 2 || T === 3 || T ===4){ 
+    console.log("Mua Xuan");
+  } else if (T === 5 || T === 6 || T === 7) {
+    console.log("Mua Ha");
+  } else if (T === 8 || T === 9 || T === 10) {
+    console.log("Mua Thu");
+  } else if (T === 11 ||T === 12 || T === 1 ) {
+    console.log("Mua Dong");
+  }
 }
-console.log(`Tháng ${month} thuộc mùa ${season}`);
+bai17(2)
